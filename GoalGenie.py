@@ -30,11 +30,11 @@ def mermaid(code: str) -> None:
             mermaid.initialize({{ startOnLoad: true, theme: 'default' }});
         </script>
         """,
-        height=st.session_state["svg_height"] + 20,
+        height=st.session_state["svg_height"] + 800,
     )
 
 if "svg_height" not in st.session_state:
-    st.session_state["svg_height"] = 20 
+    st.session_state["svg_height"] = 500
 
 st.markdown(
         """
@@ -55,7 +55,7 @@ prompt = f"""
     You are a solutions specialist and mermaid.js LR charts coder. 
     Create a flowchart that represents the user goal: {user_inpt}. 
     You must abide by the below rules:
-    1. The flowchart should be top-to-bottom, have realistic, creative, possible solutions in an organised, structured way.
+    1. The flowchart should be top-to-bottom(start with "graph TB;" in code), have realistic, creative, possible solutions in an organised, structured way.
     2. Be clear, Use good readable combination of colors for background and text and visually appealing elements for flowchart. Address sentence in 1st person (I)
     3. Use elements, shape, colors by analysing user goals briefly
     4. Only output the working, error-free mermaid code of flowchart, Nothing other tha this. Be careful of spaces, proper indentation etc., Follow the sample given.
@@ -159,7 +159,4 @@ if user_inpt: #by default this wont be none but empty string
         # mermaid(eval_code)
         print(resp.content)
         mermaid(resp.content)
-
-
-
 
