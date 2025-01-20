@@ -4,7 +4,7 @@ from langchain_core.prompts import ChatPromptTemplate
 import execjs
 import streamlit.components.v1 as components #allows var height for whole graph view
 
-st.set_page_config("Goal Genie🧞🪄",initial_sidebar_state="collapsed", page_icon="🧞🪄")
+st.set_page_config(page_title="Goal Genie🧞🪄",initial_sidebar_state="collapsed", page_icon="🧞")
 
 def mermaid(code: str) -> None:
     components.html(
