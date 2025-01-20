@@ -157,6 +157,7 @@ if user_inpt: #by default this wont be none but empty string
 #     """
         # print(eval_code)                   
         # mermaid(eval_code)
+        print(resp.content)
         mermaid(resp.content)
 
 
