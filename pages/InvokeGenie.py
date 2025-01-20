@@ -15,7 +15,7 @@ def mermaid(code: str) -> None:
 
         <script type="module">
             import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
-            mermaid.initialize({{ startOnLoad: true, theme:'default', scale:1.5 }});
+            mermaid.initialize({{ startOnLoad: true}});
         </script>
         """,
         height=st.session_state["svg_height"] + 200,
