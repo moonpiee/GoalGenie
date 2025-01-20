@@ -1,4 +1,4 @@
-altair==5.5.0
+altair
 annotated-types==0.7.0
 anyio==4.8.0
 attrs==24.3.0
@@ -22,7 +22,7 @@ jsonpointer==3.0.0
 jsonschema==4.23.0
 jsonschema-specifications==2024.10.1
 langchain-core==0.3.30
-langchain-groq==0.2.3
+langchain-groq
 langsmith==0.2.11
 markdown-it-py==3.0.0
 MarkupSafe==3.0.2
