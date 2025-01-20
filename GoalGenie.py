@@ -55,9 +55,9 @@ prompt = f"""
     You are a solutions specialist and mermaid.js LR charts coder. 
     Create a flowchart that represents the user goal: {user_inpt}. 
     You must abide by the below rules:
-    1. The flowchart should have realistic, creative, possible solutions in an organised, structured way.
+    1. The flowchart should be top-to-bottom, have realistic, creative, possible solutions in an organised, structured way.
     2. Be clear, Use good readable combination of colors for background and text and visually appealing elements for flowchart. Address sentence in 1st person (I)
-    3. Use flowchart type(TB), elements, shape, colors by analysing user goals briefly
+    3. Use elements, shape, colors by analysing user goals briefly
     4. Only output the working, error-free mermaid code of flowchart, Nothing other tha this. Be careful of spaces, proper indentation etc., Follow the sample given.
     5. Give only production ready mermaid code. Give only code from GRAPH LR. Exclude any other tags.
     Sample: 
