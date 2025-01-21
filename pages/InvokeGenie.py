@@ -49,7 +49,7 @@ llm_client = ChatGroq(
         model = "llama-3.1-70b-versatile", #st.secrets["default_model"]
         temperature = 0.5
     )
-user_inpt = st.text_input("What's your heart's desire? ❤️")
+user_inpt = st.text_area("What's your heart's desire? ❤️")
 #     6. You can use different colors, fonts, and shapes to make the flowchart more engaging and effective.
 prompt = f"""
     You are a solutions specialist and mermaid.js LR charts coder. 
