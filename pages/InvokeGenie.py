@@ -46,7 +46,7 @@ st.markdown(
 # st.write("I'm Your GoalGenie🧞. I weave a path to you to make your dreams a reality💫💫 \nWhat is that you want to achieve today?")
 llm_client = ChatGroq(
         api_key = st.secrets["GROQ_API_KEY"],
-        model = "llama-3.1-70b-versatile", #st.secrets["default_model"]
+        model = st.secrets["default_model"],
         temperature = 0.5
     )
 user_inpt = st.text_area("What's your heart's desire? ❤️")
@@ -103,7 +103,7 @@ evaluate_prompt = f"""
 template = ChatPromptTemplate( #removed from_messages
             [
             ("system","{sys_prompt}"),
-            ("human","{user_inpt}") #should include "" since it needs formattii g
+            ("human","{user_inpt}") 
             ]
         )
     
